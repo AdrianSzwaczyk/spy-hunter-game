@@ -241,7 +241,7 @@ void displayInfo(SDL_Surface* screen, bmp images, gameState g, rgb colors) {
 	DrawString(screen, screen->w / 2 - strlen(text) * 8 / 2, 26, text, images.charset);
 }
 void displayImplementedFeatures(SDL_Surface* screen, bmp images, rgb colors) {
-	char features[50] = "Arrows - moving, space - shooting";
+	char features[200] = "Arrows - moving, space - shooting, P - pause, N - new game, F11 - fullscreen, ESC - quit";
 	DrawRectangle(screen, SCREEN_WIDTH - strlen(features) * 8 - 12, SCREEN_HEIGHT - 12, strlen(features) * 8 + 4, 12, colors.blue, colors.blue);
 	DrawString(screen, SCREEN_WIDTH - strlen(features) * 8 - 10, SCREEN_HEIGHT - 10, features, images.charset);
 }
